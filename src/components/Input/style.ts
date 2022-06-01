@@ -1,13 +1,20 @@
 import styled from "styled-components";
 
-export const Body = styled.div`
+export const Div = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
   width: 100%;
+  max-width: 375px;
   height: 100%;
-  min-height: 100vh;
-  background-color: #22272e;
   margin: 0 auto;
+
+  .inputForm {
+
+  }
+
+  .buttonSearch {
+    margin-left: 10px;
+    border: 0;
+  }
 `;
