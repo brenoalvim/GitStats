@@ -1,16 +1,35 @@
-import { Div } from "./style";
+import { Div } from './style'
 
 export default function Input() {
+  function searchUser() {
+    const input = document.querySelector('.inputUsername') as HTMLInputElement
+
+    if (input) {
+      window.location.href = `User/${input.value}`
+    }
+  }
   return (
     <Div>
-      <div className="input">
+      <div className="background">
+        <div className="shape"></div>
+        <div className="shape"></div>
+      </div>
+      <div className="form">
+        <h3>
+          Git<strong>Stats</strong>
+        </h3>
+        <label htmlFor="username">
+          <strong>Github Username</strong>
+        </label>
         <input
-          className="inputForm"
           type="text"
-          placeholder="GitHub Username"
+          placeholder="Enter username"
+          className="inputUsername"
+          id="username"
+          autoComplete="off"
         />
-        <button className="buttonSearch">Search</button>
+        <button onClick={searchUser}>Search</button>
       </div>
     </Div>
-  );
+  )
 }
