@@ -26,11 +26,5 @@
     "prettier/prettier": "error",
     "space-before-function-paren": "off",
     "react/prop-types": "off"
-  },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ]
+  }
 }
