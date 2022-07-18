@@ -5,7 +5,7 @@ export default function Input() {
     const input = document.querySelector('.inputUsername') as HTMLInputElement
 
     if (input) {
-      window.location.href = `User/${input.value}`
+      window.location.href = `/${input.value}`
     }
   }
   return (

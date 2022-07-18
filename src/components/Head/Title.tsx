@@ -8,7 +8,7 @@ export default function Title(props: TitleProps) {
   return (
     <>
       <Head>
-        <title>{props.name} • GitHub Stats</title>
+        <title>{props.name} • GitStats</title>
       </Head>
     </>
   );

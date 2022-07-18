@@ -1,12 +1,12 @@
-import Meta from "../components/Head/Meta";
+import Meta from '../components/Head/Meta'
 
-import Link from "../components/Head/Link";
+import Link from '../components/Head/Link'
 
-import Title from "../components/Head/Title";
+import Title from '../components/Head/Title'
 
-import Input from "../components/Input/Input";
+import Input from '../components/Input/Input'
 
-import { Body } from "./global";
+import { Body } from './global'
 
 export default function Home() {
   return (
@@ -24,5 +24,5 @@ export default function Home() {
         `}
       </style>
     </Body>
-  );
+  )
 }

@@ -26,12 +26,12 @@ export const Div = styled.div`
     border-radius: 50%;
   }
   .shape:first-child {
-    background: linear-gradient(#1845ad, #23a2f6);
+    background: linear-gradient(#1845ad, #0f172a);
     left: -80px;
     top: -80px;
   }
   .shape:last-child {
-    background: linear-gradient(to right, #ff512f, #f09819);
+    background: linear-gradient(#1845ad, #0f172a);
     right: -30px;
     bottom: -80px;
   }
