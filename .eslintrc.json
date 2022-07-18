@@ -27,8 +27,6 @@
     "space-before-function-paren": "off",
     "react/prop-types": "off"
   },
-
-  "eslint.workingDirectories": ["Dir1", "Dir2"],
   "eslint.validate": [
     "javascript",
     "javascriptreact",
