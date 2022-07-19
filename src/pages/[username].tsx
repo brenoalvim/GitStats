@@ -33,6 +33,11 @@ export default function Home(props: any) {
         `https://api.github.com/users/${props.username}`
       )
       const responseJson = await response.json()
+      console.log(responseJson)
+      if (responseJson.message == 'Not Found') {
+        alert('User Not Found')
+        window.location.href = '/'
+      }
       setStats(responseJson)
     }
     getData()
