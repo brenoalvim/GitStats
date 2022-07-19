@@ -7,7 +7,7 @@ export const Div = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 100%;
+  height: 100vh;
   max-height: 100vh;
   width: 100%;
   color: var(--light-color);

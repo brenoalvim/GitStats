@@ -1,67 +1,32 @@
-// {
-//   "env": {
-//     "browser": true,
-//     "es6": true,
-//     "node": true,
-//     "jest": true
-//   },
-//   "extends": [
-//     "plugin:react/recommended",
-//     "standard",
-//     "plugin:@typescript-eslint/recommended",
-//     "prettier/@typescript-eslint",
-//     "prettier/standard",
-//     "prettier/react"
-//   ],
-//   "parser": "@typescript-eslint/parser",
-//   "parserOptions": {
-//     "ecmaFeatures": {
-//       "jsx": true
-//     },
-//     "ecmaVersion": 12,
-//     "sourceType": "module"
-//   },
-//   "plugins": ["react", "@typescript-eslint", "prettier"],
-//   "rules": {
-//     "prettier/prettier": "error",
-//     "space-before-function-paren": "off",
-//     "react/prop-types": "off"
-//   }
-// }
-
 {
-  "extends": [
-    "react-app",
-    "airbnb",
-    "prettier"
-  ],
   "env": {
-    "mocha": true,
+    "browser": true,
     "es6": true,
-    "commonjs": true,
-    "browser": true
+    "node": true,
+    "jest": true
   },
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true,
-      "modules": true,
-      "experimentalObjectRestSpread": true
-    }
-  },
-  "plugins": [
-    "prettier"
+  "extends": [
+    "plugin:react/recommended",
+    "standard",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "prettier/standard",
+    "prettier/react"
   ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
-    "no-underscore-dangle": "off",
-    "class-methods-use-this": "off",
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": true
-      }
-    ]
+    "prettier/prettier": "error",
+    "space-before-function-paren": "off",
+    "react/prop-types": "off"
   }
 }
+
+

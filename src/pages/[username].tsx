@@ -45,7 +45,7 @@ export default function Home(props: any) {
       <Meta></Meta>
       <Link />
       <Title name={props.username} />
-      <Header />
+      <Header stats={stats} />
       <div id="Home"></div>
       <Homepage stats={stats} />
       <div id="Stats"></div>

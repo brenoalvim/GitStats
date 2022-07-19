@@ -16,7 +16,7 @@ export default function Input() {
       </div>
       <div className="form">
         <h3>
-          Git<strong>Stats</strong>
+          GitStats
         </h3>
         <label htmlFor="username">
           <strong>Github Username</strong>

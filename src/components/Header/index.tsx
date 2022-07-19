@@ -1,6 +1,10 @@
 import { HeaderNav } from './styles'
 
-export default function Header() {
+interface HeaderProps {
+  stats: any
+}
+
+export default function Header(props: HeaderProps) {
   return (
     <HeaderNav>
       <header>
@@ -22,6 +26,9 @@ export default function Header() {
             </li>
             <li>
               <a href="#Stats">Stats</a>
+            </li>
+            <li>
+              <a href={props.stats.html_url} target="_blank">GitHub</a>
             </li>
           </ul>
           <label htmlFor="nav-toggle" className="icon-burger">

@@ -87,6 +87,8 @@ export const HomepagePattern = styled.div`
     width: 45%;
     height: 100%;
     border-radius: 50%;
+    -webkit-box-shadow: 17px 17px 40px 0px rgba(90, 228, 168, 0.7);
+    box-shadow: 17px 17px 40px 0px rgba(90, 228, 168, 0.7);
   }
 
   @media (max-width: 1200px) {
