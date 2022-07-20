@@ -6,15 +6,16 @@ import Title from '../components/Head/Title'
 
 import Input from '../components/Input/Input'
 
-import { Body } from './global'
+import GlobalStyle from './global'
 
 export default function Home() {
   return (
-    <Body>
+    <>
       <Meta></Meta>
       <Link />
       <Title name="Home" />
       <Input />
+      <GlobalStyle />
       <style>
         {`
           body{
@@ -23,6 +24,6 @@ export default function Home() {
           }
         `}
       </style>
-    </Body>
+    </>
   )
 }

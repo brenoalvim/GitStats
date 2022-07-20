@@ -1,7 +1,9 @@
 import { HomepagePattern } from './styles'
 
 interface HomepageProps {
-  stats: any
+  bio: string
+  name: string
+  avatar: string
 }
 
 export default function Homepage(props: HomepageProps) {
@@ -13,17 +15,17 @@ export default function Homepage(props: HomepageProps) {
         </p>
         <div className="hr"></div>
         <span>
-          <strong>{props.stats.name}</strong>
+          <strong>{props.name}</strong>
         </span>
         <div className="hr"></div>
-        <p>{props.stats.bio}</p>
+        <p>{props.bio}</p>
         <div className="hr"></div>
         <a href="#Stats">
           <button>My Stats</button>
         </a>
       </div>
       <div className="image">
-        <img src={props.stats.avatar_url} alt="" />
+        <img src={props.avatar} alt="" />
       </div>
     </HomepagePattern>
   )
