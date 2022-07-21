@@ -3,24 +3,27 @@ import { useEffect } from 'react'
 import { Div } from './style'
 
 export default function Input() {
+
   function searchUser() {
     const input: HTMLInputElement = document.querySelector('.inputUsername')
 
     if (input) {
-      window.location.href = `/${input.value}`
+      redirectToMainPage(input.value)
     }
   }
-  
+
+  function redirectToMainPage(username: string) {
+    window.location.href = `/${username}`
+  }
+
   useEffect(() => {
-    window.addEventListener('keydown', function (event) {
+    window.addEventListener('keydown', event => {
       if (event.defaultPrevented) {
         return
       }
 
-      switch (event.code) {
-        case 'Enter':
-          searchUser()
-          break
+      if (event.code == 'Enter') {
+        searchUser()
       }
     })
   }, [])
@@ -38,11 +41,17 @@ export default function Input() {
         </label>
         <input
           type="text"
-          placeholder="Enter username"
-          className="inputUsername"
           id="username"
           autoComplete="off"
+          list="usernameList"
+          className="inputUsername"
+          placeholder="Enter username"
         />
+        <datalist id="usernameList">
+          <option value="brenoalvim">Breno Alvim</option>
+          <option value="matthew-sbrito">Matheus Brito</option>
+          <option value="filipedeschamps">Filipe Deschamps</option>
+        </datalist>
         <button onClick={searchUser}>Search</button>
       </div>
     </Div>
