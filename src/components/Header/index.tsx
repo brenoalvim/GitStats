@@ -1,7 +1,7 @@
 import { HeaderNav } from './styles'
 
 interface HeaderProps {
-  html: string
+  html: any
 }
 
 export default function Header(props: HeaderProps) {

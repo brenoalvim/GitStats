@@ -17,6 +17,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 
 import GlobalStyle from './global'
+import { stringify } from 'querystring'
 
 export async function getServerSideProps(context: any) {
   const username = context.query.username
@@ -44,11 +45,17 @@ export default function Home(props: any) {
     getData()
   }, [])
 
-  const [stats, setStats] = useState([])
+  const [stats, setStats] = useState({
+    html_url: Array,
+    bio: Array,
+    name: Array,
+    avatar_url: Array,
+    login: Array
+  })
 
   return (
     <>
-      <Meta></Meta>
+      <Meta />
       <Link />
       <Title name={props.username} />
       <Header html={stats.html_url} />
@@ -60,4 +67,3 @@ export default function Home(props: any) {
     </>
   )
 }
- 

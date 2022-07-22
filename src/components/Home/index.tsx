@@ -1,9 +1,9 @@
 import { HomepagePattern } from './styles'
 
 interface HomepageProps {
-  bio: string
-  name: string
-  avatar: string
+  bio: any
+  name: any
+  avatar: any
 }
 
 export default function Homepage(props: HomepageProps) {

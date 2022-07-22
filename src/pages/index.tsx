@@ -11,7 +11,7 @@ import GlobalStyle from './global'
 export default function Home() {
   return (
     <>
-      <Meta></Meta>
+      <Meta />
       <Link />
       <Title name="Home" />
       <Input />
